@@ -126,7 +126,7 @@ headtrackr.Tracker = function(params) {
 					if (video.mozCaptureStream) {
 					  video.mozSrcObject = stream;
 					} else {
-					  video.src = (window.URL && window.URL.createObjectURL(stream)) || stream;
+					  video.src = stream;
 					}
 					video.play();
 				}).bind(this), function() {
